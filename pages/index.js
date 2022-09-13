@@ -1,10 +1,11 @@
-import {Fragment} from 'react';
-import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.scss';
+import {Button, Tooltip} from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
+import '../styles/Home.module.less';
 
 export default function Home() {
     return (
-        <Fragment></Fragment>
+        <Tooltip title="search">
+            <Button type="primary" icon={<SearchOutlined />}>搜索</Button>
+        </Tooltip>
     );
 }
